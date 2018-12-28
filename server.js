@@ -64,6 +64,11 @@ app.get('/index',(req,res)=>{
         welcomeMessage:'welcome to landing page'
     });
 });
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        projectsInfo:'Portfolio pages here'
+    })
+});
 app.listen(port,()=>{
     console.log(`Server is up on port ${port}`);
 });
